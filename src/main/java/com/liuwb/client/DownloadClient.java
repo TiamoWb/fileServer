@@ -85,7 +85,7 @@ public class DownloadClient {
 
         FileOutputStream fis = new FileOutputStream(file);
         byte[] buffer = new byte[1024];
-        int ch =0;
+        int ch =10;
         while((ch = is.read(buffer)) != -1){
             fis.write(buffer,0,ch);
         }
